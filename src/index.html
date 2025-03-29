@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>🐘 bluePhant - Webhook Tester</title> <!-- Ajout de l'emoji éléphant dans le titre -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐘</text></svg>">
+</head>
+<body>
+  <div class="app-container">
+    <div class="title-bar">
+      <div class="title">
+        <span class="icon">🐘</span>
+        <span>bluePhant - Webhook Tester</span>
+      </div>
+      <div class="window-controls">
+        <button id="minimize-btn" class="control-btn minimize">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+        <button id="close-btn" class="control-btn close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+    
+    <div class="main-content">
+      <div class="webhook-card">
+        <div class="webhook-input">
+          <div class="input-container">
+            <i class="fa-solid fa-link input-icon"></i>
+            <input type="text" id="webhook-url" placeholder="Paste your Discord webhook URL here" autocomplete="off">
+          </div>
+          <div class="auto-save">
+            <span id="save-status"><i class="fa-solid fa-check"></i> Auto-saved</span>
+          </div>
+        </div>
+        
+        <button id="test-btn" class="send-btn">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Test Webhook</span>
+        </button>
+        
+        <div id="status" class="status"></div>
+      </div>
+      
+      <div class="credits">
+        <p>Created by <span class="username">kOr</span></p>
+        <div class="social-links">
+          <a href="https://github.com/avenir" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://discord.gg/hsko" target="_blank" title="Discord"><i class="fa-brands fa-discord"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
